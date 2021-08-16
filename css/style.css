@@ -1,0 +1,397 @@
+body {
+
+font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+
+background: url("../images/background.jpg");
+
+  background-repeat: no-repeat;
+
+  background-attachment: fixed;
+
+  padding:0;
+
+  margin:0px;
+
+height:100%;
+}
+
+
+.nav {
+   line-height:30px;
+   margin-top:-27px;
+   border-radius: 0 0 12px;
+   color:white;
+   height:120%;
+   width:150px;
+   float:left;
+   padding:6px;
+   transition: 0.2s ease-in;
+    transition: 0.5s ease-out;
+  
+    -o-transition: 0.3s ease-in;
+  
+   background:rgba(210, 125, 0, 0.7);
+   box-shadow:25px 1px 90px 1px black inset;
+}
+
+.nav:hover {
+   background:rgba(220, 125, 0, 0.9);
+   box-shadow:15px 1px 90px 1px black inset;
+}
+
+.logo {
+background-image: url('/images/logo.gif');
+background-repeat: no-repeat; 
+background-position: left top; 
+padding-top:68px;
+margin-top:-110px;
+margin-left:-25px;
+margin-bottom:-122px;
+ -webkit-filter: drop-shadow(9px 9px 5px rgba(1,1,1,0.6));
+ filter: url(#drop-shadow);
+-ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12,OffY=12,Color='white')";
+ filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='white')";
+}
+
+.head {
+    
+margin:15px;
+    
+font-family:myfirstfont;
+    
+src:url("font/")
+    
+font-size: 50px;
+  
+background: -webkit-linear-gradient(#eee, #DC6C49);
+  
+-webkit-background-clip: text;
+  
+-webkit-text-fill-color: transparent;
+
+
+text-shadow: 0 0 3px white;
+}
+
+.search 
+{
+
+  opacity:0.4;
+  background: rgba(50, 50, 50, 0.2);
+  -webkit-transition: all 0.20s ease-in-out;
+  -moz-transition: all 0.20s ease-in-out;
+  -ms-transition: all 0.20s ease-in-out;
+  -o-transition: all 0.20s ease-in-out;
+  outline: none;
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 20px;
+  border: 0px solid white;
+  height:30px;
+  width:150px;
+}
+
+.search:hover {
+  box-shadow: -5 -6 30px rgba(81, 203, 238, 1);
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 20px;
+  border: none;
+  height:30px;
+  width:150px;
+  border-radius:5px;
+}
+
+
+.search:focus {
+box-shadow: -5 -6 30px rgba(81, 203, 238, 1);
+  padding: 3px 0px 3px 3px;
+  border: none;
+  width:200px;
+  border-radius:19px;
+}
+
+li {
+  
+float: left;
+
+}
+
+
+li a {
+  display: block;
+  
+color: white;
+  
+text-align: center;
+padding: 15px 16px;
+ 
+text-decoration: none;
+
+}
+
+
+a:hover:not(.active) {
+ 
+    background-color: #111;
+
+}
+
+
+.active {
+  
+background-color: #DEAA65;
+
+}
+
+
+#loginform{
+	
+margin-top:150px;
+  
+margin-left:auto;
+  
+margin-right:auto;
+	
+width:270px;
+
+}
+
+
+
+.input {
+
+width:250px;
+  
+height:50px;
+    
+padding:0px 50px;
+    
+font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+
+background: #f5f5f5;
+
+
+color: #333;
+	
+font-size: 14px;
+	
+margin-top:0.7px;
+  
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+ border-radius:80px 0px 80px;
+ box-shadow: 0 0 0px #9ecaed;
+  
+ opacity:0.2;
+
+}
+
+
+.input:hover {
+border-radius:0px 80px 0px;
+box-shadow: 0 0 10px #9ecaed;
+  
+opacity:0.8;
+
+}
+
+
+.input:focus {
+  
+opacity:0.9;
+  
+background-color:white;
+
+border:none;
+border-radius:0px 80px 0px;
+}
+
+
+/* The Dropdown Button */
+.dropbtn {
+    margin:13px;
+    color: white;
+    border:none;
+    padding: 16px;
+    font-size: 16px;
+    cursor: pointer;
+    radius:10px;
+    width:300px;
+    -webkit-filter: drop-shadow(1px 1px 50px rgba(0,0,0,1));
+    filter: url(#drop-shadow);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='white')";
+    filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='white')";
+   background:rgba(214, 140, 67, 0.09);
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:white;
+    min-width: 160px;
+    opacity:0.7;
+    box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.2);
+    margin-top:-13px;
+}
+
+.dropdown-content a {
+    color: grey;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: silver;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+   background: rgba(214, 140, 67, 0.9); 
+   transition: 0.5s ease-out;
+  
+   -o-transition: 0.5s ease-in;
+    
+
+
+}
+
+.loginbutton {
+background-color:#e5bf05;	
+border-radius:0px/0px;
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;	
+color:#333;	
+display:inline-block;	
+font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+font-size:18px;	
+font-weight:bold;
+width:150px;
+margin:50px;
+text-align:center;
+line-height:50px;
+text-decoration:none;
+height:50px;
+margin-top:20px;
+margin-bottom:20px;
+border:none;
+	
+outline:0;
+	
+cursor: pointer;
+  
+align:center;
+
+}
+
+
+
+.loginbutton:active {
+	
+position:relative;
+	
+top:0px;
+
+}
+
+
+
+.loginbutton:hover{
+	
+background-color:#ffdd00;
+
+border-radius: 0px 15px 0px 15px;
+transition: 0.2s ease-in;
+
+-o-transition: 0.2s ease-out;
+}
+
+
+.b {
+margin:13;
+}
+
+.text {
+color:white;
+}
+
+.hr {
+colour:grey;
+height: 20px;
+border: 0;
+box-shadow: inset 0 20px 20px -18px rgba(0, 0, 0, 0.5);
+}
+
+/* The HOME Button */
+.btn {
+    margin:13px;
+    border:none;
+    color: white;
+    border:none;
+    padding: 16px;
+    font-size: 16px;
+    cursor: pointer;
+    radius:10px;
+    width:300px;
+    transition: 0.2s ease-out;
+  
+    -o-transition: 0.2s ease-in;
+    
+
+    background:rgba(214, 140, 67, 0.09);
+}
+
+.btn:hover {
+    background: rgba(214, 140, 67, 0.9);
+}
+
+
+img  {
+  border-color: black;
+  border-width:5px;
+}
+
+chkbox {
+height:20px;
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+}
+
+.feed {
+    border-width:2px;
+    width: 50%;
+    height: 100px;
+    padding: 19px;
+    transition: 0.2s ease-in;
+    transition: 0.5s ease-out;
+  
+    -o-transition: 0.3s ease-in;
+  
+    opacity:0.2;
+    border-radius:5px;
+    border-color:grey;
+}
+
+.feed:hover {
+    opacity:0.6;
+    border-radius:20px;
+}
+
+.feed:focus {
+    opacity:0.8;
+    border-radius:20px;
+    border-color:rgba(110, 165, 214, 0.9);
+}
